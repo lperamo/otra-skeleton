@@ -11,8 +11,5 @@
   "config": {
     "bin-dir" : "bin",
     "sort-packages": true
-  },
-   "conflict": {
-    "otra/otra": "*"
   }
 }
