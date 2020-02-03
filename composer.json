@@ -5,7 +5,7 @@
   "description": "A minimal OTRA project recommended to create bare bones applications",
   "require": {
     "ext-mbstring": "*",
-    "otra": "V1.0.0-alpha.1.0.0",
+    "otra/otra": "V1.0.0-alpha.1.0.0",
     "php": ">=7.4.0"
   },
   "config": {
