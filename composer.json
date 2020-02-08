@@ -11,5 +11,8 @@
   "config": {
     "bin-dir" : "bin",
     "sort-packages": true
+  },
+  "scripts": {
+    "post-install-cmd": "php bin/otra.php version"
   }
 }
