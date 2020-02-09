@@ -11,5 +11,10 @@
   "config": {
     "bin-dir" : "bin",
     "sort-packages": true
+  },
+  "scripts": {
+    "otra-update": "otra init",
+    "post-install-cmd": "@otra-update",
+    "post-update-cmd": "@otra-update"
   }
 }
