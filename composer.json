@@ -13,7 +13,7 @@
     "sort-packages": true
   },
   "scripts": {
-    "otra-update": "otra init",
+    "otra-update": "pwd",
     "post-install-cmd": "@otra-update",
     "post-update-cmd": "@otra-update"
   }
