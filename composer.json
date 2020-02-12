@@ -14,7 +14,7 @@
   },
   "minimum-stability": "dev",
   "scripts": {
-    "otra-update": "php bin/otra.php init",
+    "otra-update": ["@php bin/otra.php version", "@php bin/otra.php init"],
     "post-install-cmd": "@otra-update",
     "post-update-cmd": "@otra-update"
   },
