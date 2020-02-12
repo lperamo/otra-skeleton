@@ -17,5 +17,8 @@
     "otra-update": "php bin/otra.php init",
     "post-install-cmd": "@otra-update",
     "post-update-cmd": "@otra-update"
+  },
+  "scripts-descriptions": {
+    "otra-update": "Checks the basic architecture of the OTRA project and fixes it if needed."
   }
 }
