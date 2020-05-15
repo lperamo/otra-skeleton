@@ -14,7 +14,12 @@
   },
   "minimum-stability": "dev",
   "scripts": {
-    "otra-update": ["@php bin/otra.php version", "@php bin/otra.php init", "@php bin/otra.php buildDev 0 7 true 1"],
+    "otra-update": [
+      "@php vendor/otra/otra/src/console/architecture/createGlobalConstants/createGlobalConstantsTask.php",
+      "@php bin/otra.php version",
+      "@php bin/otra.php init",
+      "@php bin/otra.php buildDev 0 7 true 1"
+    ],
     "post-install-cmd": "@otra-update",
     "post-update-cmd": "@otra-update"
   },
