@@ -14,16 +14,20 @@
   },
   "minimum-stability": "dev",
   "scripts": {
-    "otra-update": [
+    "otra-init": [
       "@php vendor/otra/otra/src/console/architecture/createGlobalConstants/createGlobalConstantsTask.php",
       "@php bin/otra.php version",
       "@php bin/otra.php init",
       "@php bin/otra.php buildDev 0 7 true 1"
     ],
+    "otra-update" : "@composer update otra/otra --no-cache --no-autoloader",
+    "otra-update-dry" : "@composer update otra/otra --no-cache --no-autoloader --dry-run",
     "post-install-cmd": "@otra-update",
     "post-update-cmd": "@otra-update"
   },
   "scripts-descriptions": {
-    "otra-update": "Checks the basic architecture of the OTRA project and fixes it if needed."
+    "otra-init": "Checks the basic architecture of the OTRA project and fixes it if needed.",
+    "otra-update" : "Updates OTRA without autoloader files and without using the cache.",
+    "otra-update-dry" : "Checks for new version of OTRA without using the cache."
   }
 }
