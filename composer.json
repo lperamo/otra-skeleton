@@ -21,7 +21,9 @@
       "@php bin/otra.php buildDev 0 7 true 1"
     ],
     "otra-update" : "@composer update otra/otra --no-cache --no-autoloader",
-    "otra-update-dry" : "@composer update otra/otra --no-cache --no-autoloader --dry-run"
+    "otra-update-dry" : "@composer update otra/otra --no-cache --no-autoloader --dry-run",
+    "post-install-cmd": "@otra-init",
+    "post-update-cmd": "@otra-init"
   },
   "scripts-descriptions": {
     "otra-init": "Checks the basic architecture of the OTRA project and fixes it if needed.",
