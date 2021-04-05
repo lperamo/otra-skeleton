@@ -22,8 +22,6 @@
     ],
     "otra-update" : "@composer update otra/otra --no-cache --no-autoloader",
     "otra-update-dry" : "@composer update otra/otra --no-cache --no-autoloader --dry-run",
-    "post-install-cmd": "@otra-update",
-    "post-update-cmd": "@otra-update"
   },
   "scripts-descriptions": {
     "otra-init": "Checks the basic architecture of the OTRA project and fixes it if needed.",
