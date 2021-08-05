@@ -5,14 +5,13 @@
   "description": "A minimal OTRA project recommended to create bare bones applications",
   "require": {
     "ext-mbstring": "*",
-    "otra/otra": "^1.0.0",
+    "otra/otra": "^1.0.0@dev",
     "php": ">=8.0.0"
   },
   "config": {
     "bin-dir" : "bin",
     "sort-packages": true
   },
-  "minimum-stability": "dev",
   "scripts": {
     "otra-init": [
       "@php vendor/otra/otra/src/console/architecture/createGlobalConstants/createGlobalConstantsTask.php",
