@@ -10,6 +10,9 @@
   },
   "config": {
     "bin-dir" : "bin",
+    "preferred-install": {
+      "otra/otra": "dist"
+    },
     "sort-packages": true
   },
   "scripts": {
