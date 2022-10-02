@@ -6,7 +6,7 @@
   "require": {
     "ext-mbstring": "*",
     "otra/otra": "^1.0.0@dev",
-    "php": ">=8.0.0"
+    "php": ">=8.1.0"
   },
   "config": {
     "bin-dir" : "bin",
@@ -16,12 +16,7 @@
     "sort-packages": true
   },
   "scripts": {
-    "otra-init": [
-      "@php vendor/otra/otra/src/console/architecture/createGlobalConstants/createGlobalConstantsTask.php",
-      "@php bin/otra.php version",
-      "@php bin/otra.php init",
-      "@php bin/otra.php buildDev 0 7 true 1"
-    ],
+    "otra-init": "@php vendor/otra/otra/src/console/composerInit.php",
     "otra-update" : "@composer update otra/otra --no-cache --no-autoloader",
     "otra-update-dry" : "@composer update otra/otra --no-cache --no-autoloader --dry-run",
     "post-install-cmd": "@otra-init",
