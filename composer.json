@@ -5,8 +5,8 @@
   "description": "A minimal OTRA project recommended to create bare bones applications",
   "require": {
     "ext-mbstring": "*",
-    "otra/otra": "^1.0.0@dev",
-    "php": ">=8.1.0"
+    "otra/otra": ">=2023.0.0@dev",
+    "php": ">=8.2.0"
   },
   "config": {
     "bin-dir" : "bin",
