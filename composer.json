@@ -6,7 +6,7 @@
   "require": {
     "ext-mbstring": "*",
     "otra/otra": ">=2023.0.0@dev",
-    "php": ">=8.2.0"
+    "php": ">=8.4.0"
   },
   "config": {
     "bin-dir" : "bin",
